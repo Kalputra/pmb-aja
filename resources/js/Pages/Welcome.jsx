@@ -6,11 +6,11 @@ export default function Welcome({ auth }) {
             <Head title="Penerimaan Mahasiswa Baru | Universitas Indonesia" />
 
             <div className="min-h-screen bg-white">
-                {/* Navigation - Clean & Minimal */}
+                // Navigasi minimal\n{" "}
                 <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="flex justify-between items-center h-16">
-                            {/* Logo UI - Faculty Logo */}
+                            // Logo UI fakultas\n{" "}
                             <Link href="/" className="flex items-center gap-3">
                                 <img
                                     src="/images/logo-fakultas1.png"
@@ -18,7 +18,6 @@ export default function Welcome({ auth }) {
                                     className="h-12"
                                 />
                             </Link>
-
                             {/* Simple Navigation - Functional */}
                             <div className="flex items-center gap-8">
                                 <Link
@@ -40,7 +39,6 @@ export default function Welcome({ auth }) {
                                     Kontak
                                 </Link>
                             </div>
-
                             {/* Auth Buttons - Minimal */}
                             <div className="flex items-center gap-4">
                                 {auth.user ? (
@@ -74,7 +72,6 @@ export default function Welcome({ auth }) {
                         </div>
                     </div>
                 </nav>
-
                 {/* Hero Section - Clean & Elegant */}
                 <section
                     id="beranda"
@@ -186,7 +183,6 @@ export default function Welcome({ auth }) {
                         </div>
                     </div>
                 </section>
-
                 {/* Info Section - Cara Pendaftaran */}
                 <section id="informasi" className="py-20 bg-gray-50">
                     <div className="max-w-6xl mx-auto px-6">
@@ -361,7 +357,6 @@ export default function Welcome({ auth }) {
                         </div>
                     </div>
                 </section>
-
                 {/* CTA Section - Minimal */}
                 {!auth.user && (
                     <section className="py-20 bg-[#FFDE21]">
@@ -382,7 +377,6 @@ export default function Welcome({ auth }) {
                         </div>
                     </section>
                 )}
-
                 {/* Footer - Light Background */}
                 <footer id="kontak" className="bg-[#efefef] py-12">
                     <div className="max-w-6xl mx-auto px-6">

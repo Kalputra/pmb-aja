@@ -22,7 +22,7 @@ export default function AdminDashboard({
             rejected:
                 "bg-red-500/90 text-white backdrop-blur-sm shadow-lg shadow-red-500/30",
         };
-
+        i;
         const labels = {
             draft: "Draft",
             verified: "Verif",
@@ -76,14 +76,8 @@ export default function AdminDashboard({
             }
         >
             <Head title="Admin Dashboard" />
-
-            {/* Background with gradient overlay */}
+            // Background gradient overlay\n{" "}
             <div className="relative min-h-[calc(100vh-4rem)]">
-                {/* Background Image */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: `url('/images/bg-pmb.jpg')` }}
-                />
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/85 to-slate-900/90" />
 

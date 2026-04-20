@@ -1,6 +1,16 @@
-# TODO: Update Logo Styling in AuthenticatedLayout.jsx
+# TODO: Replace JSX Block Comments with // Style
 
-- [ ] Remove background color and box shadow from desktop sidebar logo div
-- [ ] Remove background color and box shadow from mobile top bar logo div
-- [ ] Remove background color and box shadow from mobile sidebar logo div
-- [ ] Verify that profile avatar sections retain their background and shadow
+## Steps:
+
+1. ✅ Plan approved
+2. ✅ Created TODO.md
+3. ✅ Updated resources/js/Layouts/AuthenticatedLayout.jsx (most comments replaced)
+4. 🔄 Updated resources/js/Pages/Welcome.jsx (partial)
+5. Update resources/js/Pages/Admin/Dashboard.jsx
+6. Update resources/js/Pages/Auth/Login.jsx
+7. Update remaining JSX files
+8. Fix any syntax errors if any
+9. Test with `npm run dev`
+10. Complete
+
+Updated progress.
