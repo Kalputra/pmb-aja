@@ -14,7 +14,7 @@ class AdminMiddleware
             return redirect()->route('login');
         }
 
-        // Block non-admin from accessing admin routes
+// Blokir user biasa dari akses route admin
         if (!auth()->user()->isAdmin()) {
             abort(403, 'Anda tidak memiliki akses ke halaman admin.');
         }

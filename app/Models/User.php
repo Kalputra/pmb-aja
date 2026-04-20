@@ -49,7 +49,7 @@ class User extends Authenticatable
 
     protected $appends = ['is_admin'];
     
-    // Relationships
+// Relasi antar model
     public function registrations()
     {
         return $this->hasMany(Registration::class);

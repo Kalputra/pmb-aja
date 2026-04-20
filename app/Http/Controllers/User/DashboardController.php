@@ -12,7 +12,7 @@ class DashboardController extends Controller
     {
         $user = auth()->user();
         
-        // Get user's registrations
+// Ambil data pendaftaran user ini
         $registrations = $user->registrations()
             ->with(['studyProgram', 'secondChoice', 'payment', 'examCard', 'examResult'])
             ->latest()
@@ -41,17 +41,17 @@ class DashboardController extends Controller
 
         $user = auth()->user();
         
-        // Create uploads directory if not exists
+// Buat folder upload kalo belum ada
         if (!file_exists(public_path('uploads/photos'))) {
             mkdir(public_path('uploads/photos'), 0777, true);
         }
         
-        // Delete old photo if exists
+// Hapus foto lama kalo ada
         if ($user->photo && file_exists(public_path($user->photo))) {
             unlink(public_path($user->photo));
         }
 
-        // Upload new photo
+// Upload foto baru
         $photo = $request->file('photo');
         $filename = 'photo_' . $user->id . '_' . time() . '.' . $photo->getClientOriginalExtension();
         $photo->move(public_path('uploads/photos'), $filename);

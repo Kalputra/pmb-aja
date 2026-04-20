@@ -6,11 +6,11 @@ export default function Welcome({ auth }) {
             <Head title="Penerimaan Mahasiswa Baru | Universitas Indonesia" />
 
             <div className="min-h-screen bg-white">
-                // Navigasi minimal\n{" "}
+                // Navigasi sederhana aja
                 <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="flex justify-between items-center h-16">
-                            // Logo UI fakultas\n{" "}
+                            // Logo fakultas UI
                             <Link href="/" className="flex items-center gap-3">
                                 <img
                                     src="/images/logo-fakultas1.png"
@@ -18,7 +18,7 @@ export default function Welcome({ auth }) {
                                     className="h-12"
                                 />
                             </Link>
-                            {/* Simple Navigation - Functional */}
+                            {/* Navigasi sederhana fungsional */}
                             <div className="flex items-center gap-8">
                                 <Link
                                     href="#beranda"
@@ -39,7 +39,7 @@ export default function Welcome({ auth }) {
                                     Kontak
                                 </Link>
                             </div>
-                            {/* Auth Buttons - Minimal */}
+                            {/* Tombol login/register minimal */}
                             <div className="flex items-center gap-4">
                                 {auth.user ? (
                                     <Link
@@ -79,9 +79,9 @@ export default function Welcome({ auth }) {
                 >
                     <div className="max-w-6xl mx-auto px-6 py-24 lg:py-32">
                         <div className="grid lg:grid-cols-2 gap-16 items-center">
-                            {/* Left Content */}
+                            {/* Konten kiri */}
                             <div className="max-w-xl">
-                                {/* Badge */}
+                                {/* Badge info */}
                                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#005Ccc]/10 text-[#005Ccc] text-xs font-medium rounded-full mb-6">
                                     <span className="w-2 h-2 bg-[#005Ccc] rounded-full animate-pulse"></span>
                                     Pendaftaran Dibuka untuk Tahun Ajaran
@@ -133,7 +133,7 @@ export default function Welcome({ auth }) {
                                     </div>
                                 )}
 
-                                {/* Stats - Subtle */}
+                                {/* Statistik sederhana */}
                                 <div className="flex gap-12 pt-10 mt-10 border-t border-gray-200">
                                     <div>
                                         <p className="text-2xl font-bold text-[#005Ccc]">
@@ -162,7 +162,7 @@ export default function Welcome({ auth }) {
                                 </div>
                             </div>
 
-                            {/* Right - Clean Image */}
+                            {/* Gambar kanan clean */}
                             <div className="relative">
                                 <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
                                     <img

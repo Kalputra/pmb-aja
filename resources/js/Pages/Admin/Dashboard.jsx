@@ -22,7 +22,7 @@ export default function AdminDashboard({
             rejected:
                 "bg-red-500/90 text-white backdrop-blur-sm shadow-lg shadow-red-500/30",
         };
-        i;
+
         const labels = {
             draft: "Draft",
             verified: "Verif",
@@ -76,15 +76,15 @@ export default function AdminDashboard({
             }
         >
             <Head title="Admin Dashboard" />
-            // Background gradient overlay\n{" "}
+            // Efek overlay gradient buat background
             <div className="relative min-h-[calc(100vh-4rem)]">
-                {/* Gradient Overlay */}
+                {/* Efek gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/85 to-slate-900/90" />
 
                 {/* Content */}
                 <div className="relative z-10 py-8">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
-                        {/* Welcome Card - Glassmorphism */}
+                        {/* Card selamat datang glassmorphism */}
                         <div className="backdrop-blur-xl bg-white/10 border border-white/10 rounded-2xl p-6 sm:p-8">
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                                 <div>
@@ -98,7 +98,7 @@ export default function AdminDashboard({
                             </div>
                         </div>
 
-                        {/* Stats Cards - Glassmorphism */}
+                        {/* Card statistik glassmorphism */}
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                             {statCards.map((stat) => (
                                 <div
@@ -134,9 +134,9 @@ export default function AdminDashboard({
                             ))}
                         </div>
 
-                        {/* Two Column Layout */}
+                        {/* Layout dua kolom */}
                         <div className="grid lg:grid-cols-2 gap-6">
-                            {/* Top Programs - Glassmorphism */}
+                            {/* Program top glassmorphism */}
                             {programStats && programStats.length > 0 && (
                                 <div className="backdrop-blur-xl bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
                                     <div className="p-5 border-b border-white/10">
@@ -194,7 +194,7 @@ export default function AdminDashboard({
                                 </div>
                             )}
 
-                            {/* Quick Actions - Glassmorphism */}
+                            {/* Aksi cepat glassmorphism */}
                             <div className="backdrop-blur-xl bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
                                 <div className="p-5 border-b border-white/10">
                                     <h4 className="font-semibold text-white">
@@ -252,7 +252,7 @@ export default function AdminDashboard({
                             </div>
                         </div>
 
-                        {/* Recent Registrations - Glassmorphism */}
+                        {/* Pendaftaran terbaru glassmorphism */}
                         {recentRegistrations &&
                             recentRegistrations.length > 0 && (
                                 <div className="backdrop-blur-xl bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
@@ -341,7 +341,7 @@ export default function AdminDashboard({
                                 </div>
                             )}
 
-                        {/* Empty State */}
+                        {/* State kosong */}
                         {(!recentRegistrations ||
                             recentRegistrations.length === 0) && (
                             <div className="backdrop-blur-xl bg-white/10 border border-white/10 rounded-2xl p-12 text-center">

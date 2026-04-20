@@ -100,7 +100,7 @@ export default function AuthenticatedLayout({ header, children }) {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Sidebar - Desktop */}
+            {/* Sidebar desktop */}
             <div
                 className={`hidden md:fixed md:inset-y-0 md:flex md:flex-col transition-all duration-300 ease-in-out z-30 ${
                     isHovered ? "md:w-64" : "md:w-20"
@@ -109,7 +109,7 @@ export default function AuthenticatedLayout({ header, children }) {
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <div className="flex flex-col flex-grow bg-white border-r border-gray-200 overflow-hidden shadow-lg">
-                    {/* Logo Section */}
+                    {/* Bagian logo */}
                     <div className="flex items-center flex-shrink-0 px-4 py-6 border-b border-gray-200">
                         <Link
                             href="/"
@@ -135,7 +135,7 @@ export default function AuthenticatedLayout({ header, children }) {
                         </Link>
                     </div>
 
-                    {/* Navigation */}
+                    {/* Navigasi */}
                     <nav className="flex-1 px-3 py-6 space-y-1 overflow-y-auto">
                         {navItems.map((item) => (
                             <Link
@@ -164,9 +164,9 @@ export default function AuthenticatedLayout({ header, children }) {
                         ))}
                     </nav>
 
-                    {/* Bottom Menu */}
+                    {/* Menu bawah */}
                     <div className="flex-shrink-0 px-3 py-4 space-y-1 border-t border-gray-200">
-                        {/* User Info */}
+                        {/* Info user */}
                         <div
                             className={`px-3 py-3 bg-gray-50 rounded-lg mb-2 transition-all duration-300 ${isHovered ? "opacity-100" : "opacity-0 h-0 py-0"} overflow-hidden`}
                         >
@@ -189,7 +189,7 @@ export default function AuthenticatedLayout({ header, children }) {
                             </div>
                         </div>
 
-                        {/* Collapsed User Avatar */}
+                        {/* Avatar user collapsed */}
                         {!isHovered && (
                             <div className="flex justify-center mb-2">
                                 <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
